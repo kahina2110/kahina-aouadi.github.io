@@ -1,0 +1,133 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Vos styles supplémentaires */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=Dancing+Script&family=Gruppo&family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Proza+Libre & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Quattrocento+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+body {
+    font-family: 'Crimson Text', serif;
+    font-size: large;
+    font-weight: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 3px;
+   
+}
+
+nav {
+    background-image: url(./cerisier.webp);
+    background-repeat: no-repeat;
+}
+
+.name {
+  font-size: 60px;
+}
+
+@media screen and (min-width: 428px) and (max-width: 767px){
+
+    * {
+        margin-left: auto;
+        margin-right: auto; 
+    }
+   
+    form {
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    textarea {
+        width: 290px;
+    }
+
+
+    #hijabi {
+        padding-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+
+    .name {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #cv {
+       
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   
+
+    #project {
+        height: 1700px;
+    }
+
+    #about {
+        height: 2000px;
+    }
+
+   
+    .images
+    {
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+
+    .projet {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        
+    }
+
+    .projets {
+        padding-top: 20px;
+    }
+
+    .wac {
+        width: 200px;
+    }
+
+    .school {
+        width: 300px;
+    }
+
+    .ecole
+     {
+        flex-direction: column;
+    }
+
+    #hobbie {
+        height: 1800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #hobbie img {
+        
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 6px;
+        width: 300px;
+    }
+
+   
+
+   
+}
+
+
+
+
+
+

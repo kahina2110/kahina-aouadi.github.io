@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/b87d756cc2.js" crossorigin="anonymous"></script>
+  <title>Porfolio</title>
+</head>
+
+
+<body class="bg-rose-50 ">
+  <header>
+    <nav class="border-gray-200 bg-url[('/cerisier.png')] bg-white h-[100px] rounded-lg fixed w-full text-2xl">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ml-2">
+        <a href="#" class="flex items-center">
+          <img src="#" class="h-8 mr-3 hidden" alt=" Logo">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white "></span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block  md:w-auto  " id="navbar-default">
+          <ul
+           class="xl:mt-[3%] ml-[30%] w-full  font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:bg-purple-200 dark:border-gray-700 flex items-center">
+            <li>
+              <a href="#accueil"
+                class="block py-2 pl-3 pr-4 text-black bg-purple-200 rounded md:bg-transparent md:text-purple-200 md:p-0  md:dark:text-purple-900"
+                aria-current="page"><b>Accueil</b></a>
+            </li>
+            <li>
+              <a href="#about"
+                class="scroll-smooth block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-purple-900 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">A
+                propos de moi</a>
+            </li>
+            <li>
+              <a href="#formation"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:dark:text-purple-900 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Formations</a>
+            </li>
+            <li>
+              <a href="#experience"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:dark:text-purple-900 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Expériences
+                professionnelles</a>
+            </li>
+            <li>
+              <a href="#project"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-purple-900 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projets</a>
+            </li>
+            <li>
+              <a href="#hobbie"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-purple-900 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Hobbies</a>
+            </li>
+            <li>
+              <a href="#contact"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-purple-900 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const button = document.querySelector("[data-collapse-toggle='navbar-default']");
+        const menu = document.querySelector("#navbar-default");
+
+        button.addEventListener("click", function () {
+          menu.classList.toggle("hidden");
+          menu.classList.toggle("block");
+        });
+      });
+    </script>
+
+
+  </header>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });</script>
+
+
+<div id="accueil" class="bg-amber-50 xl:p-10 xl:h-[100vh] ml-auto mr-auto sm:h-[100vh] pt-[10%] w-[70%] rounded-lg shadow-gray-800 shadow-2xl">
+  <img alt="profil" id="hijabi" class="xl:w-[350px] xl:h-[400px] lg:w-[250px] lg:h-[300px] lg:pt-[10px] md:w-[100px] md:h-[20vh] xl:ml-auto xl:mr-auto sm:ml-[40%] md:ml-auto md:mr-auto md:w-[200px] md:h-[250px]" src="./kahina.png">
+  <h1 class="name xl:ml-auto p-4 md:w-[400px] md:ml-auto md:mr-auto text-center space-x-8">KAHINA AOUADI</h1>
+  <p id="cv" class="xl:ml-auto xl:w-[400px] bg-amber-100 p-4 md:w-[400px] md:ml-auto md:mr-auto text-center underline rounded-lg">
+    <a href="#" onclick="telecharger('Kahina AOUADI-2.pdf')">
+      <b>Télécharger mon cv</b>
+    </a>
+  </p>
+</div>
+
+
+
+
+  <script>
+    function telecharger(nomFichier) {
+      var urlFichier = "./" + nomFichier;
+      window.open(urlFichier, '_blank');
+    }
+  </script>
+
+
+  <div id="about" class="bg-amber-50  lg:h-auto xl:h-auto xl:pt-[5%] w-[70%]  ml-auto mr-auto  shadow-2xl overflow-x-hidden mt-6 rounded-lg">
+    <p class="text-center ml-15% w-70% text-3xl ">Etudiante EPITECH à la web@cadémie, je suis à la recherche
+      d’une alternance pour une durée de 14 mois; de Septembre 2023 à novembre 2024. Curieuse d’apprendre et en quête
+      d’évolution, mon aspiration est d’approfondir mes compétences en travaillant pour une entreprise qui m’aidera à
+      atteindre mes objectifs.</p>
+    <div class="flex flex-wrap justify-center ">
+      <img src="./assets/php.svg" class="images h-[250px] w-[250px] sm:w-300px mx-4 my-2 rounded-lg ">
+      <img src="./assets/js.webp" class="images h-[250px] w-[250px] sm:w-300px mx-4 my-2 rounded-lg ">
+      <img src="./assets/html.png" class="images h-[250px] w-[250px] sm:w-300px mx-4 my-2 rounded-lg ">
+      <img src="./assets/react.png" class="images h-[250px] w-[250px] sm:w-300px mx-4 my-2 rounded-lg animate-bounce ">
+      <img src="./assets/laravel.png" class="images h-[250px] w-[250px] sm:w-300px mx-4 my-2 rounded-lg ">
+    </div>
+  </div>
+
+
+  <div id="formation"
+    class="bg-amber-50  h-auto text-2xl pt-6 h-[100vh] flex flex-row justify-center xl:items-center w-[70%] rounded-lg  ml-auto mr-auto shadow-2xl mt-6 ">
+    <div class="ecole flex flex-row justify-center xl:w-[80%]  ml-auto mr-auto sm:flex flex-col">
+      
+      <img src="./assets/bdl.jpg" class="school xl:ml-[20%] h-[200px] w-[250px] sm:w-[300px] sm:ml-[15%] lg:w-[500px] mx-4 my-2 rounded-lg">
+      <p class="text-center sm:w-[200px] xl:w-[300px] mt-[10%] sm:ml-[30%] pt-[1%] bg-amber-100 md:h-[50px] rounded-lg xl:h-[50px]">Bac Scientifique en 2018</p>
+
+  
+      <img src="./assets/fac.png" class="school xl:ml-[27%] h-[250px] w-[250px] sm:ml-[15%] sm:w-[300px] mx-4 my-2  rounded-lg">
+      <p class="mt-[10%] sm:w-[200px] xl:w-[300px] sm:ml-[30%] xl:ml-[30%] text-center xl:ml-[18%] pt-[1%] bg-amber-100 rounded-lg h-[50px]">Licences</p>
+ 
+   
+      <img src="./assets/wac.png" class="school wac xl:ml-[10 %]  h-[200px] w-[450px] sm:ml-[15%] mx-4 my-2 rounded-lg sm:w-[80%] ">
+      <p class="text-center sm:w-[200px] xl:w-[300px] sm:ml-[30%] text-center  mt-[10%] ml-[12%] pt-[1%] bg-amber-100  rounded-lg h-[50px]">EPITECH</p>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="experience"
+    class="bg-amber-50 sm:h-[80vh]  md:h-[50vh] xl:h-[50vh] text-2xl  w-[70%]  rounded-lg  ml-auto mr-auto shadow-2xl mt-6 ">
+    <p class="text-center ml-auto mr-auto w-[70%] sm:ml-2 ">Mes expériences professionnelles</p>
+    <div class="flex flex-col space-y-8 pt-[5%] mr-auto">
+    <div class="adar border border-black shadow-2xl rounded-lg text-center ml-auto mr-auto dark:shadow-gray-800 sm:w-[400px] xl:w-[30%] h-[30%] ">
+       <p class=" text-2xl">Aide à la personne | ADAR </p>
+       <p class=" text-sm">Assistance aux personnes âgées dans la
+        vie quotidienne et soutien moral</p>
+        <p class=" text-sm">Babysitting</p>
+    </div>
+    <div class="dispeo border border-black shadow-2xl rounded-lg text-center dark:shadow-gray-800 ml-auto mr-auto sm:w-[40%] h-[30%] ">
+    <p>Préparatrice de commande | DISPEO </p>
+    <p class="text-sm">Préparation de commandes / Manutention</p>
+    </div>
+    </div>
+  </div>
+
+
+  <div id="project"
+    class="bg-amber-50  xl:h-[100vh]  pt-[10%] text-2xl xl:flex xl:justify-center items-center sm:p-2 w-[70%] shadow-2xl  ml-auto mr-auto mt-6">
+    <div class="flex justify-center overflow-x-hidden">
+      <div class="projets ml-auto mr-auto flex flex-wrap ">
+        <div class="projet w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2">
+          <div class="flex flex-row space-x-8">
+          <img src="./assets/symfony.png" class="w-[50px] h-[50px] ">
+          <p class="text-center text-xl  ">My quiz</p>
+          </div>
+          <a href="https://github.com/EpitechWebAcademiePromo2024/W-PHP-502-LIL-2-1-Quiz-kahina.aouadi">
+            <img class="img w-full h-[250px] rounded-lg hover:scale-150 shadow-xl dark:shadow-gray-800"
+              src="./assets/quizzzzz.png" alt="project">
+          </a>
+        </div>
+
+        <div class="projet w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2">
+          <div class="flex flex-row space-x-8">
+          <img src="./assets/laravel.png" class="w-[50px] h-[50px]">
+          <p class="text-center text-xl">FreeAds</p>
+          </div>
+          <a href="https://github.com/EpitechWebAcademiePromo2024/W-PHP-502-LIL-2-1-FreeAds-kahina.aouadi">
+            <img class="projet w-full h-[250px] rounded-lg hover:scale-150 shadow-xl dark:shadow-gray-800"
+              src="./assets/FreeAds.png" alt="project1">
+          </a>
+        </div>
+
+        <div class="projet w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2">
+          <div class="flex flex-row space-x-8">
+          <img src="./assets/js.webp" class="w-[50px] h-[50px]">
+          <p class="text-center text-xl"> Puissance 4</p>
+          </div>
+          <a href="https://github.com/EpitechWebAcademiePromo2024/W-JSC-501-LIL-1-1-puissance4-kahina.aouadi">
+            <img class="img w-full h-[250px] rounded-lg hover:scale-150 shadow-xl dark:shadow-gray-800"
+              src="./assets/puissance4.png" alt="project2">
+          </a>
+        </div>
+
+        <div class="projet w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2">
+          <div class="flex flex-row space-x-8">
+            <img src="./assets/php.svg" class="w-[50px] h-[50px] ">
+            <img src="./assets/sql.png" class="w-[50px] h-[40px] ">
+            <p class="text-center text-xl">My Cinema</p>
+          </div>
+          <a href="https://github.com/EpitechWebAcademiePromo2024/W-PHP-501-LIL-1-1-mycinema-kahina.aouadi">
+            <img class="img w-full h-[250px] rounded-lg hover:scale-150 shadow-xl dark:shadow-gray-800 "
+              src="./assets/mycinema.png" alt="project4">
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="hobbie" class="bg-amber-50  h-[100vh] xl:h-[1100px] text-2xl md:h-[1800px] w-[70%]  ml-auto mr-auto rounded-lg shadow-2xl mt-6 ">
+    <p class="ml-[25%] text-center pt-[10%] w-[70%] sm:ml-2 ">Mes hobbies</p>
+    <div class="flex flex-wrap pl-2 space-x-8 pt-[10%]">
+    <img class="rounded-full h-[250px] pl-2 rounded-lg shadow-xl dark:shadow-gray-800" src="./assets/makeup.png">
+    <img class="h-[250px] xl:w-[25%] md:w-[350px] rounded-lg  shadow-xl dark:shadow-gray-800" src="./assets/histoire.jpg">
+    <img class=" h-[250px] rounded-lg shadow-xl dark:shadow-gray-800" src="./assets/dessin.jpeg">
+    <img class=" h-[250px] rounded-lg shadow-xl dark:shadow-gray-800" src="./assets/skincare.jpg">
+    <img class=" h-[250px] ml-auto rounded-lgshadow-xl dark:shadow-gray-800" src="./assets/cine.jpg">
+    <img class=" h-[250px] ml-[40%] rounded-lgshadow-xl dark:shadow-gray-800" src="./assets/voyage.jpg">
+  
+  </div>
+  </div>
+
+
+
+
+  <div id="contact"
+    class="bg-amber-50  sm:h-[60vh] xl:h-[60vh] text-2xl flex flex-col items-center shadow-2xl rounded-lg w-[70%] ml-auto mr-auto mt-6">
+    <p class="text-center w-[70%] sm:ml-[100px] md:ml-[20%] ml-auto mr-auto">Contact</p>
+    <form method="post" class="w-[70%] sm:w-[60%] md:w-[40%] lg:w-[30%] xl:w-[25%] mt-6 border-black " id="form">
+      <input class="border border-black rounded-lg w-full mb-4" type="text" name="from_name" placeholder="Email">
+      <input class="border border-black rounded-lg w-full mb-4" type="text" name="to_name" value="kahina.ad21@gmail.com">
+      <textarea class="border border-black rounded-lg w-full mb-4" rows="4" name="message" placeholder="Votre message ici"></textarea>
+      <button id="button" class="bg-gray-300 w-full" type="submit">Envoyer</button>
+    </form>
+    <div class="reseau mt-8 flex flex-row">
+      <a href="https://www.linkedin.com/in/kahina-aouadi/"><img class="w-[50px] h-[50px] " src="./assets/linkedin.png"></a>
+      <a href="https://www.linkedin.com/in/kahina-aouadi/"><img class="w-[50px] h-[50px] " src="./assets/git.png"></a>
+
+    </div>
+  </div>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('T7jqM86Q0me3U9xZw')
+</script>
+<script>const btn = document.getElementById('button');
+
+  document.getElementById('form')
+   .addEventListener('submit', function(event) {
+     event.preventDefault();
+  
+     btn.value = 'Sending...';
+  
+     const serviceID = 'default_service';
+     const templateID = 'template_k5mr9vh';
+  
+     emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = 'Send Email';
+        alert('Sent!');
+      }, (err) => {
+        btn.value = 'Send Email';
+        alert(JSON.stringify(err));
+      });
+  });
+  
+  </script>
+
+</body>
+
+</html>
